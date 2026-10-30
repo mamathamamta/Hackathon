@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicPulse AI | Civic Action Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>🌍 CivicPulse AI</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#report">Report Problem</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Your Voice. Our City. Better Tomorrow.</h1>
+
+        <p>
+            Report civic problems. Let AI understand them.
+            Together, let's build a better community.
+        </p>
+
+        <a href="#report" class="btn">Report a Problem</a>
+    </section>
+
+    <section class="features" id="about">
+        <h2>How CivicPulse AI Works</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>📢 Report</h3>
+                <p>Citizens report public problems easily.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI Analysis</h3>
+                <p>AI understands and prioritizes complaints.</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Track</h3>
+                <p>Monitor problems and their resolution.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="report" class="report">
+    <div class="report-container">
+
+        <div class="report-heading">
+            <span class="tag">CITIZEN CONNECT</span>
+            <h2>Report a Civic Issue</h2>
+            <p>Help us make your community safer and better.</p>
+        </div>
+
+        <form id="complaintForm">
+
+            <label>Your Name</label>
+            <input type="text" id="citizenName"
+                placeholder="Enter your name" required>
+
+            <label>Problem Category</label>
+            <select id="category" required>
+                <option value="">Select a category</option>
+                <option>Road Damage</option>
+                <option>Waterlogging</option>
+                <option>Garbage Overflow</option>
+                <option>Broken Streetlight</option>
+                <option>Water Supply</option>
+                <option>Other</option>
+            </select>
+
+            <label>Describe the Problem</label>
+            <textarea id="description"
+                placeholder="Explain the problem and its impact..."
+                required></textarea>
+
+            <label>Problem Location</label>
+            <input type="text" id="location"
+                placeholder="Enter area or address" required>
+
+            <label>Upload a Photo (optional)</label>
+            <input type="file" id="photo" accept="image/*">
+
+            <button type="submit">Submit Complaint →</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+</section>
+        <h2>Report a Civic Problem</h2>
+        <p>Help us identify problems in your community.</p>
+
+        <button onclick="showMessage()">
+            Start Reporting
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 CivicPulse AI | AI for Civic Impact</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
